@@ -1,0 +1,297 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>تفاصيل الكتاب وخطة القراءة التفاعلية</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#e5e2dd",
+            "primary": "#5f3e32",
+            "primary-fixed-dim": "#ebbcac",
+            "surface-container-low": "#f6f3ee",
+            "secondary-container": "#e5e2e0",
+            "primary-container": "#795548",
+            "on-secondary-fixed-variant": "#484645",
+            "surface-variant": "#e5e2dd",
+            "surface-container": "#f0ede9",
+            "tertiary-container": "#7b562f",
+            "inverse-surface": "#31302d",
+            "tertiary": "#603f1a",
+            "on-surface-variant": "#504440",
+            "surface": "#fcf9f4",
+            "outline-variant": "#d4c3bd",
+            "on-surface": "#1c1c19",
+            "on-primary-fixed": "#2e150b",
+            "surface-dim": "#dcdad5",
+            "inverse-primary": "#ebbcac",
+            "background": "#fcf9f4",
+            "on-secondary-fixed": "#1c1b1b",
+            "primary-fixed": "#ffdbcf",
+            "surface-container-high": "#ebe8e3",
+            "on-primary-container": "#fdcdbc",
+            "on-error-container": "#93000a",
+            "on-error": "#ffffff",
+            "secondary-fixed": "#e5e2e0",
+            "secondary-fixed-dim": "#c9c6c4",
+            "secondary": "#605e5d",
+            "on-tertiary-fixed-variant": "#61401b",
+            "error-container": "#ffdad6",
+            "surface-bright": "#fcf9f4",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#f3f0eb",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#eebd8e",
+            "error": "#ba1a1a",
+            "on-background": "#1c1c19",
+            "on-tertiary-container": "#ffcea0",
+            "on-tertiary-fixed": "#2c1600",
+            "on-secondary-container": "#666463",
+            "tertiary-fixed": "#ffdcbd",
+            "on-primary-fixed-variant": "#603f33",
+            "outline": "#82746f",
+            "on-secondary": "#ffffff",
+            "surface-tint": "#7a5649"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "sans": ["Noto Sans", "sans-serif"],
+            "label-sm": ["Noto Sans"],
+            "body-sm": ["Noto Sans"],
+            "body-md": ["Noto Sans"],
+            "headline-md": ["Noto Sans"],
+            "label-md": ["Noto Sans"],
+            "label-lg": ["Noto Sans"],
+            "body-lg": ["Noto Sans"],
+            "headline-lg": ["Noto Sans"],
+            "title-md": ["Noto Sans"],
+            "display-lg": ["Noto Sans"],
+            "headline-sm": ["Noto Sans"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-sans antialiased overflow-x-hidden m-0 p-0 select-none">
+<!-- Phone Screen Frame Simulation -->
+<div class="relative mx-auto min-h-screen max-w-md w-full bg-background flex flex-col shadow-2xl overflow-hidden">
+<!-- BACKGROUND SCREEN: Book Details (Under Scrim) -->
+<div class="flex-1 flex flex-col bg-surface relative select-none">
+<!-- Top App Bar (Back-to-Main Stack Navigation) -->
+<header class="flex items-center justify-between px-4 py-3 bg-surface sticky top-0 z-0">
+<button aria-label="الرجوع" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+<h1 class="text-title-md font-bold text-on-surface">تفاصيل الكتاب</h1>
+<div class="flex items-center gap-1">
+<button aria-label="حفظ كمرجع" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-2xl">bookmark_add</span>
+</button>
+<button aria-label="مشاركة" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-2xl">share</span>
+</button>
+</div>
+</header>
+<!-- Book Header & Info -->
+<main class="flex-1 px-5 pt-3 pb-24 flex flex-col items-center">
+<!-- Book Cover with Warm Shadow -->
+<div class="relative mb-5 group">
+<img class="w-36 h-52 object-cover rounded-xl shadow-md border border-outline-variant/30" data-alt="An elegant book cover for The Power of Habit in an Arabic edition with minimalist geometric typography in warm terracotta, deep brown, and ivory colors, placed on a pristine aesthetic wooden podium with soft morning sunlight casting realistic gentle book shadows in a calm modern studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-rpoaZ3jEjWgWkz_RGrnrD6zgvwB7rVXzmkznbWOZwkN3gIpKMyql6EVy04wGgcvk4zxtnMmXn2ZgMsO1GHpvTrjKCGUV6Vh0Z4cdewtGGCuGZ0iA64F74PnoQ8uWmTDnKo7dNyhP0PAmOU4pjNbWtUuScKN4jpXuVpDgSv6ZaeCZD7oW_28hhUApKw_mLilQcJIVFERtvkSIpTn7Smua1_c2W6PCPCO6uMCodYZEaHowcs0bfslWpw">
+<span class="absolute top-2 left-2 bg-primary/90 text-on-primary text-[11px] font-bold px-2 py-0.5 rounded-full shadow-sm">
+            الأكثر مبيعاً
+          </span>
+</div>
+<!-- Book Title & Author -->
+<h2 class="text-headline-sm font-bold text-on-surface text-center mb-1 leading-snug">
+          قوة العادات: لماذا نعمل ما نعمله في الحياة والعمل
+        </h2>
+<p class="text-body-md text-on-surface-variant font-medium text-center mb-2">
+          تشارلز دوهيج
+        </p>
+<!-- Categories / Tags -->
+<div class="flex items-center gap-2 mb-4">
+<span class="text-label-sm bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-medium">تطوير الذات</span>
+<span class="text-outline-variant">•</span>
+<span class="text-label-sm bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-medium">علم النفس السلوكي</span>
+</div>
+<!-- Book Metadata Badges -->
+<div class="grid grid-cols-3 gap-2 w-full mb-5">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="text-label-sm text-secondary mb-1">الصفحات</span>
+<span class="text-title-md font-bold text-primary">280 صفحة</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="text-label-sm text-secondary mb-1">التقييم</span>
+<div class="flex items-center gap-1">
+<span class="text-title-md font-bold text-on-surface">4.8</span>
+<span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[10px] text-secondary">(1,850)</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<span class="text-label-sm text-secondary mb-1">متوسط القراءة</span>
+<span class="text-title-md font-bold text-tertiary">14 يوماً</span>
+</div>
+</div>
+<!-- Excerpt / About Section -->
+<div class="w-full text-right mb-4">
+<h3 class="text-title-md font-semibold text-on-surface mb-2">نبذة عن الكتاب</h3>
+<p class="text-body-sm text-on-surface-variant leading-relaxed line-clamp-3">
+            يستكشف الكتاب الطبيعة العلمية للعادة، وكيف يمكن لتغيير بسيط في نمطنا اليومي وحلقات الإشارات والمكافآت أن يصنع تحولاً جذرياً في مسارات حياتنا ومؤسساتنا...
+          </p>
+</div>
+<!-- Background CTA (Covered partially by sheet) -->
+<div class="w-full mt-auto pt-2">
+<button class="w-full h-12 bg-primary-container text-on-primary font-bold rounded-xl flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+<span class="">ابدأ القراءة</span>
+</button>
+</div>
+</main>
+</div>
+<!-- MODAL SCRIM OVERLAY -->
+<div aria-modal="true" class="absolute inset-0 bg-[#161312]/45 backdrop-blur-[2px] transition-opacity z-20 flex flex-col justify-end" role="dialog">
+<!-- MATERIAL 3 MODAL BOTTOM SHEET -->
+<div class="w-full bg-[#FFFDF9] rounded-t-[28px] shadow-2xl border-t border-outline-variant/30 pt-3 pb-6 px-5 flex flex-col z-30 transform transition-transform duration-300 max-h-[813px] overflow-y-auto"><!-- Drag Handle Indicator -->
+<div class="flex justify-center mb-4">
+  <div class="w-12 h-1.5 rounded-full bg-[#CDAA85]/60"></div>
+</div>
+
+<!-- Header -->
+<div class="flex items-start justify-between mb-4">
+  <div>
+    <div class="flex items-center gap-2">
+      <h2 class="text-headline-lg font-bold text-[#3E2A1E]">تخصيص خطتك القرائية</h2>
+      <span class="text-xl">📖</span>
+    </div>
+    <p class="text-body-sm text-[#4F5D2F] mt-1">اختر المدة التي تناسب جدولك وسنتكفل بحساب الأهداف لك.</p>
+  </div>
+  <button aria-label="إغلاق النافذة" class="w-10 h-10 rounded-full flex items-center justify-center text-[#4F5D2F] hover:bg-[#F1E4D3]/60 transition-colors" type="button">
+    <span class="material-symbols-outlined text-2xl">close</span>
+  </button>
+</div>
+
+<!-- Section 1: Book Summary Card -->
+<div class="flex items-center gap-3 p-3 mb-4 rounded-xl bg-[#FBF6EE] border border-[#CDAA85]/50 shadow-xs">
+  <img class="w-12 h-16 object-cover rounded-lg shadow-xs shrink-0" alt="غلاف الكتاب" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbTqi74DDfyxtSaQXsXaYMuB82WF9zKP_-1nGU5bqu15NZwW8tGqTCe8IKAR6UntHc_lWJOMEkWWNjWrhMfvoMKMNTq1CuSFBR-mHJk_0tfN9w_moeQmKUQn8v_bBLh6OwpwayzudmbT6kB0F3VMZ94jt03UXz0OJpGH5q4N0paro_R71OGu7X25mFSk0kRepjvlnxY2_L1qMzALSGYaUPvKzOmA3ox1aiM9gXobKRDUaZlHoYcTF7Xg">
+  <div class="flex-1 min-w-0">
+    <p class="text-title-md font-bold text-[#3E2A1E] truncate">قوة العادات</p>
+    <p class="text-body-sm text-[#4F5D2F] mt-0.5">إجمالي الصفحات: 280 صفحة • تشارلز دوهيج</p>
+  </div>
+  <div class="w-10 h-10 rounded-full bg-[#F1E4D3] flex items-center justify-center text-[#6B4630] shrink-0">
+    <span class="material-symbols-outlined text-xl">menu_book</span>
+  </div>
+</div>
+
+<!-- Section 2: Target Duration Selector -->
+<div class="mb-4">
+  <span class="text-title-md font-bold text-[#3E2A1E] block mb-2.5">مدة القراءة المستهدفة:</span>
+  <div class="grid grid-cols-2 gap-2.5">
+    <!-- Active Chip: 14 Days -->
+    <button class="flex items-center justify-between px-3.5 py-3 rounded-xl border-2 border-[#6B4630] bg-[#F1E4D3] text-[#3E2A1E] font-semibold text-body-md transition-all shadow-xs h-12" type="button">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[#6B4630] text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <span class="">14 يوماً (أسبوعان)</span>
+      </div>
+      <span class="text-[11px] font-bold text-[#3E2A1E] px-1.5 py-0.5 rounded bg-[#CDAA85]/40">الموصى به</span>
+    </button>
+    <!-- 21 Days -->
+    <button class="flex items-center gap-2 px-3.5 py-3 rounded-xl border border-[#CDAA85] bg-[#FBF6EE] hover:bg-[#F1E4D3]/40 text-[#4F5D2F] font-medium text-body-md transition-all h-12" type="button">
+      <span class="material-symbols-outlined text-[#CDAA85] text-xl">radio_button_unchecked</span>
+      <span class="text-[#3E2A1E]">21 يوماً (3 أسابيع)</span>
+    </button>
+    <!-- 30 Days -->
+    <button class="flex items-center gap-2 px-3.5 py-3 rounded-xl border border-[#CDAA85] bg-[#FBF6EE] hover:bg-[#F1E4D3]/40 text-[#4F5D2F] font-medium text-body-md transition-all h-12" type="button">
+      <span class="material-symbols-outlined text-[#CDAA85] text-xl">radio_button_unchecked</span>
+      <span class="text-[#3E2A1E]">30 يوماً (شهر)</span>
+    </button>
+    <!-- Custom Date -->
+    <button class="flex items-center gap-2 px-3.5 py-3 rounded-xl border border-dashed border-[#CDAA85] bg-[#FBF6EE] hover:bg-[#F1E4D3]/40 text-[#4F5D2F] font-medium text-body-md transition-all h-12" type="button">
+      <span class="material-symbols-outlined text-[#4F5D2F] text-xl">calendar_month</span>
+      <span class="text-[#3E2A1E]">تاريخ مخصص</span>
+    </button>
+  </div>
+</div>
+
+<!-- Section 3: Calculated Daily Rate Card -->
+<div class="mb-4 rounded-xl p-4 bg-[#FBF6EE] border border-[#CDAA85] relative overflow-hidden shadow-xs">
+  <div class="flex items-start justify-between">
+    <div>
+      <p class="text-body-sm font-semibold text-[#4F5D2F]">المعدل اليومي المطلوب</p>
+      <div class="flex items-baseline gap-2 mt-1">
+        <span class="text-headline-lg font-bold text-[#3E2A1E] leading-none text-2xl">20</span>
+        <span class="text-title-md font-bold text-[#3E2A1E]">صفحة / يومياً</span>
+        <span class="text-body-sm text-[#4F5D2F]">(≈ 25 دقيقة)</span>
+      </div>
+    </div>
+    <div class="w-12 h-12 rounded-full bg-[#F1E4D3] flex items-center justify-center text-[#6B4630]">
+      <span class="material-symbols-outlined text-2xl">timer</span>
+    </div>
+  </div>
+  <div class="mt-3 pt-3 border-t border-[#CDAA85]/30 flex flex-col gap-1.5">
+    <p class="text-body-sm text-[#3E2A1E] flex items-center gap-2 font-medium">
+      <span class="material-symbols-outlined text-lg text-[#4F5D2F]">event_available</span>
+      <span class="">تاريخ الختم المتوقع: <strong class="text-[#3E2A1E]">15 نوفمبر 2025</strong></span>
+    </p>
+  </div>
+</div>
+
+<!-- Section 4: Daily Reminder Toggle + Primary Action -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-[#FBF6EE] border border-[#CDAA85] mb-5">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full bg-[#F1E4D3] flex items-center justify-center text-[#6B4630]">
+      <span class="material-symbols-outlined text-xl">notifications_active</span>
+    </div>
+    <div>
+      <p class="text-body-md font-bold text-[#3E2A1E]">تذكير يومي بالقراءة</p>
+      <div class="flex items-center gap-1.5 mt-0.5">
+        <span class="text-label-sm text-[#4F5D2F]">الموعد المحدد:</span>
+        <button class="text-label-sm font-bold text-[#3E2A1E] bg-[#F1E4D3] px-2 py-0.5 rounded flex items-center gap-1 hover:bg-[#CDAA85]/30 transition-colors" type="button">
+          <span class="">08:30 م</span>
+          <span class="material-symbols-outlined text-xs text-[#4F5D2F]">edit</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Toggle Switch -->
+  <label class="relative inline-flex items-center cursor-pointer min-w-[48px] min-h-[48px] justify-center">
+    <input checked="" class="sr-only peer" type="checkbox">
+    <div class="w-12 h-7 bg-[#CDAA85]/40 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[13px] after:start-[3px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#6B4630]"></div>
+  </label>
+</div>
+
+<!-- Action CTA Buttons -->
+<div class="flex flex-col gap-2">
+  <button class="w-full h-12 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-md transition-all text-body-md" style="background: linear-gradient(135deg, #6B4630 0%, #82563C 100%);" type="button">
+    <span class="material-symbols-outlined text-xl">checklist_rtl</span>
+    <span class="">تأكيد وبدء الخطة القرائية</span>
+  </button>
+  <button class="w-full h-10 bg-transparent hover:bg-[#F1E4D3]/50 text-[#4F5D2F] font-medium rounded-xl flex items-center justify-center transition-colors text-body-sm" type="button">
+    إلغاء
+  </button>
+</div></div>
+</div>
+</div>
+
+
+</body></html>

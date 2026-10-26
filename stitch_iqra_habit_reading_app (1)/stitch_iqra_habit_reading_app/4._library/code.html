@@ -1,0 +1,151 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>المكتبة - تصفح الكتب</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-container": "#e5e2e0",
+            "on-secondary-fixed": "#1c1b1b",
+            "outline-variant": "#d4c3bd",
+            "on-primary-fixed": "#2e150b",
+            "on-tertiary": "#ffffff",
+            "surface-container-high": "#ebe8e3",
+            "primary-fixed": "#ffdbcf",
+            "surface-variant": "#e5e2dd",
+            "surface-container-highest": "#e5e2dd",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7b562f",
+            "on-primary-container": "#fdcdbc",
+            "primary-container": "#795548",
+            "on-background": "#1c1c19",
+            "inverse-primary": "#ebbcac",
+            "on-tertiary-container": "#ffcea0",
+            "secondary": "#605e5d",
+            "surface-dim": "#dcdad5",
+            "on-secondary-container": "#666463",
+            "on-tertiary-fixed-variant": "#61401b",
+            "surface-container": "#f0ede9",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#eebd8e",
+            "primary": "#5f3e32",
+            "tertiary-fixed": "#ffdcbd",
+            "primary-fixed-dim": "#ebbcac",
+            "inverse-on-surface": "#f3f0eb",
+            "surface": "#fcf9f4",
+            "on-secondary-fixed-variant": "#484645",
+            "on-primary-fixed-variant": "#603f33",
+            "background": "#fcf9f4",
+            "secondary-fixed": "#e5e2e0",
+            "inverse-surface": "#31302d",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#c9c6c4",
+            "outline": "#82746f",
+            "surface-tint": "#7a5649",
+            "surface-bright": "#fcf9f4",
+            "on-tertiary-fixed": "#2c1600",
+            "on-error-container": "#93000a",
+            "tertiary": "#603f1a",
+            "on-surface": "#1c1c19",
+            "on-surface-variant": "#504440",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f6f3ee"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          fontFamily: {
+            sans: ["Noto Sans Arabic", "Noto Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col items-center justify-start antialiased selection:bg-primary-fixed" style="background-color: rgb(251, 246, 238); color: rgb(62, 42, 30);">
+<!-- Mobile Viewport Container -->
+<main class="w-full max-w-md min-h-screen flex flex-col bg-surface-bright shadow-sm relative pb-28" style="background-color: rgb(251, 246, 238); color: rgb(62, 42, 30);">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-20 bg-surface/90 backdrop-blur-md px-4 pt-4 pb-2 border-b border-surface-variant/40 flex items-center justify-between" style="background-color: rgba(251, 246, 238, 0.95); border-color: rgb(205, 170, 133);">
+<div class="flex items-center gap-3">
+<button aria-label="تصفية المحتوى" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</button>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-on-surface" style="color: rgb(62, 42, 30);">المكتبة</h1>
+<div class="flex items-center gap-1">
+<button aria-label="قائمتي المحفوظة" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[24px]">bookmark</span>
+</button>
+</div>
+</header>
+<!-- Search Bar (Material 3 - 52dp) -->
+<section class="px-4 pt-3 pb-2"><div class="relative flex items-center w-full h-12 px-4 rounded-2xl bg-white border shadow-xs focus-within:ring-1" style="border-color: rgb(205, 170, 133);"><span class="material-symbols-outlined text-[22px] ml-3 shrink-0" style="color: #4F5D2F;">search</span><input class="w-full bg-transparent border-none p-0 text-sm md:text-base placeholder:text-[#4F5D2F]/60 focus:outline-none focus:ring-0" placeholder="ابحث عن كتاب، كاتب، أو موضوع..." type="search" style="color: #3E2A1E;"><div class="flex items-center gap-1 mr-2 shrink-0"><button aria-label="البحث الصوتي" class="w-8 h-8 rounded-full flex items-center justify-center transition-colors" style="color: #4F5D2F;"><span class="material-symbols-outlined text-[20px]">mic</span></button></div></div></section>
+<!-- Category Filter Chips (Horizontal Scroll) -->
+<section class="py-2.5 overflow-hidden"><div class="flex items-center gap-2 px-4 overflow-x-auto no-scrollbar"><button class="flex items-center gap-1.5 h-10 px-4 rounded-2xl text-xs font-semibold shrink-0 shadow-xs active:scale-95 transition-transform text-white" style="background-color: #6B4630;"><span class="material-symbols-outlined text-[18px]">check</span><span class="">الكل</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">ديني</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">تاريخي</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">أدبي</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">علم النفس</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">التربية</span></button><button class="flex items-center h-10 px-4 rounded-2xl text-xs font-medium shrink-0 active:scale-95 transition-colors" style="background-color: #E6EBD3; color: #4F5D2F;"><span class="">تطوير الذات</span></button></div></section>
+<!-- Featured Book Spotlight Card -->
+<section class="px-4 py-3"><div class="flex items-center justify-between mb-3"><h2 class="text-base font-bold flex items-center gap-2" style="color: #3E2A1E;"><span class="">الكتب المميزة</span><span class="inline-block w-2 h-2 rounded-full" style="background-color: #6B4630;"></span></h2><a class="text-xs font-semibold hover:underline" href="#" style="color: #6B4630;">عرض الكل</a></div><div class="relative overflow-hidden rounded-2xl bg-white border p-4 shadow-sm" style="border-color: rgb(205, 170, 133);"><div class="flex items-stretch gap-4"><div class="relative w-28 h-40 shrink-0 rounded-2xl overflow-hidden shadow-md"><img class="w-full h-full object-cover" data-alt="A modern Arabic book cover of Tariq Al-Suwaidan's self-development title with elegant calligraphy, textured warm cream paper finish, geometric minimalist patterns in deep terracotta and gold foil accents, illuminated in a cozy atmospheric light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJm5ZgXSbLSJYbnrQzUWNtS-9_zywxgfh6QN4BHHva01LOVvMfwfqxCaF8Crxty8iTmOQGHmoO11xniuON9JpanX2QGz7zyN-FjYoXgUXmTZP0ltg_jvsMtctX9iA6EUpkrZRVUxFBSVi7j3wNFXfbsWMHuIKlRxFcxD-6_S9I6DTcAaBlGiAjswpQpyoWWH07hZFdPqx1U6bEnP6HlqgOKtQHlzIXhCX6WSN9iz8hXsmiFHOrFYss4w"></div><div class="flex flex-col justify-between flex-1 py-1"><div><h3 class="text-lg font-bold leading-snug line-clamp-1" style="color: #3E2A1E;">طريق الحكمة</h3><p class="text-xs font-medium mt-1" style="color: #4F5D2F;">د. طارق السويدان</p></div><div class="pt-3"><button class="w-full h-12 px-4 rounded-2xl text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all" style="background-color: #6B4630;"><span class="material-symbols-outlined text-[18px]">bookmark_add</span><span class="">إضافة للجدول</span></button></div></div></div></div></section>
+<!-- Recommended for Habit Grid -->
+<section class="px-4 py-3"><div class="flex items-center justify-between mb-3"><div><h2 class="text-base font-bold" style="color: #3E2A1E;">ترشيحات تلائم جدولك</h2><p class="text-xs" style="color: #4F5D2F;">مختارة حسب نمط قراءتك المفضل</p></div><button class="text-xs font-semibold hover:underline" style="color: #6B4630;">تخصيص</button></div><div class="grid grid-cols-2 gap-3.5"><div class="flex flex-col rounded-2xl bg-white border p-3 shadow-xs" style="border-color: #CDAA85;"><div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-stone-100 mb-2.5"><img class="w-full h-full object-cover" data-alt="An authentic Arabic historical and Islamic biography book cover for Men Around the Messenger by Khalid Muhammad Khalid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA63U8Sr7JToyNgdzVTdJDQcMcbLIqQl6Iz0t-7a5IyScRCixRBxa3N-cnJVmy0cvGrYth9WVV8rlCeXLXr5wUaP-eG0mu0ZMcjFCtepcEm3YYKJ2SPyXrS8D8o3gAnW6Y3f2w38SYzUTrysU2ZqRBQy5bJWpXdxbNwuE9C0X7XKME_9u9CXQ2ydRtUmkCG6kPiai-UDONZ9CFH9XCE46M_ICvdlxiX7lvY832xyUF0Ckq9Emso82OmpA"></div><h4 class="text-xs font-bold line-clamp-1 leading-snug" style="color: #3E2A1E;">رجال حول الرسول</h4><p class="text-[11px] line-clamp-1 mt-0.5" style="color: #4F5D2F;">خالد محمد خالد</p></div><div class="flex flex-col rounded-2xl bg-white border p-3 shadow-xs" style="border-color: #CDAA85;"><div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-stone-100 mb-2.5"><img class="w-full h-full object-cover" data-alt="Contemporary psychology book cover in Arabic titled I Want to Live by Mehdi Al-Mosawi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4upggKpCHO5trFbV62qphzm6wyEvdNejad4wIZF5vtJf0SxTC9BeSfflKktzy4L52UN5jKVhfAGoVJSZy_HNLIQNCNbBdgBtH-fWQJyoOXG66a81dkWhZPxqaNbPUeqFSTstQP1LZdPGXZR8jmE1ghYPeWcyf9azSmEQvwe9GRNxfJWl9Dwl2lNk41cIj-1VIoh_jRAp1g3WQdGjGgF5DgjhQKUXZopKQJk5oqhlxwQZ6xeqmWUoP2A"></div><h4 class="text-xs font-bold line-clamp-1 leading-snug" style="color: #3E2A1E;">أريد أن أعيش</h4><p class="text-[11px] line-clamp-1 mt-0.5" style="color: #4F5D2F;">مهدي الموسوي</p></div><div class="flex flex-col rounded-2xl bg-white border p-3 shadow-xs" style="border-color: #CDAA85;"><div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-stone-100 mb-2.5"><img class="w-full h-full object-cover" data-alt="Comprehensive world history book cover for The Story of Civilization by Will Durant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmE__-Xg66oVtGjLp9Zdv38J2EZVc9JRsIfxQUI-Uyot5huAlGi5t3sv-JuKyAv5-QnZFchYEqiufMfz_IJbs2_pB-W-cYGM_aeY0JE1bqwYVtWY0VJpDNtHZf8tfgEF1UyGK3kIyLZitLNg6mcILtSgSBlac0vUmNwFf-sb3A8kDva1Ioi5bAHt4xQ4sIGbC9lqUNRcfNAn584khj8xSKXb5Z1_8Ff614IIE16lwjpHc7NxpTCTo2Bg"></div><h4 class="text-xs font-bold line-clamp-1 leading-snug" style="color: #3E2A1E;">تاريخ الحضارات</h4><p class="text-[11px] line-clamp-1 mt-0.5" style="color: #4F5D2F;">د. ويل ديورانت</p></div><div class="flex flex-col rounded-2xl bg-white border p-3 shadow-xs" style="border-color: #CDAA85;"><div class="relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-stone-100 mb-2.5"><img class="w-full h-full object-cover" data-alt="Literary novel cover of The Bamboo Stalk by Saud Alsanousi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqSf1b82tQFH_SjNaDpWNZmKtNzKJrMrhPJVqv1vmzdLZ-6Pz_RetBaW11QhCrsUZdY41XVhT2pNFWnvfoQN4jYOG33YsJUONeMQN1BR6dVD7OjAi336tl7f0zzoEdFk8oZFChaHCoFYiBy9rxzjZisYIZLy7VZQBoa44t6b8KTvy5f3NqW6dsiFB2HcPqhBOpOtsUcJvswFXiNArT2yV0CBRhmr1INkb_OFM5DUbNSMiG0yIg1G80pg"></div><h4 class="text-xs font-bold line-clamp-1 leading-snug" style="color: #3E2A1E;">ساق البامبو</h4><p class="text-[11px] line-clamp-1 mt-0.5" style="color: #4F5D2F;">سعود السنعوسي</p></div></div></section>
+<!-- Popular This Week Section -->
+<section class="px-4 py-3"><div class="flex items-center justify-between mb-3"><h2 class="text-base font-bold" style="color: #3E2A1E;">الأكثر قراءة هذا الأسبوع</h2><span class="text-xs font-medium" style="color: #4F5D2F;">تحديث مستمر</span></div><div class="space-y-2.5"><div class="flex items-center gap-3.5 p-3 rounded-2xl bg-white border shadow-xs transition-colors" style="border-color: #CDAA85;"><div class="w-6 text-center font-bold text-lg" style="color: #6B4630;">١</div><div class="w-12 h-16 rounded-2xl overflow-hidden shrink-0 shadow-xs bg-stone-100"><img class="w-full h-full object-cover" data-alt="Miniature book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2pqWxilujJLlXIkDNQ3ZsENmhzPqcDbrJYgaWov1yohNRcoSFSPUKAYbahH0mzoyom5sK8A7-wDKUmdHDLXFGGFDjDSgqwcnrYHJqnDxcEwhjri714qaAmoTMzHkIZ88B0hMg_GWoTKDU3sRCOVD3GjNPQfKYVV4-qB7D42A7qZ2jqYttun7zOCDebJh2kTYds3QdFJy2aZDlB4m7lq8RVHcLK0XHiz3ASCK7iShpY1iKBm6gxX3OQw"></div><div class="flex-1 min-w-0"><h4 class="text-xs font-bold truncate" style="color: #3E2A1E;">لأنك الله: رحلة إلى السماء السابعة</h4><p class="text-[11px] mt-0.5 truncate" style="color: #4F5D2F;">علي بن جابر الفيفي</p></div><button aria-label="إضافة" class="w-12 h-12 rounded-full flex items-center justify-center transition-colors" style="color: #4F5D2F;"><span class="material-symbols-outlined text-[20px]">bookmark_add</span></button></div><div class="flex items-center gap-3.5 p-3 rounded-2xl bg-white border shadow-xs transition-colors" style="border-color: #CDAA85;"><div class="w-6 text-center font-bold text-lg" style="color: #4F5D2F;">٢</div><div class="w-12 h-16 rounded-2xl overflow-hidden shrink-0 shadow-xs bg-stone-100"><img class="w-full h-full object-cover" data-alt="Book thumbnail of Atomic Habits" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqE7d9nEaS6XfdN5KfLu3Ah7hvUCrC5uhX4F9wGt-b1R_eVawcFrJxioveit2F-7hO3wNVewnQtY0R6e7e5SPdf1Vvr78-trKJECFqv2MlN_R-Yn3fJhP99sGBOIRx0dc2qIfX0cRvEemdskqY1h_4C988w4CTMH1LITbHR_PtI1LeQ4-iypekIyqQER2SRMGunWtelNJeqK3tYSGhMIm-buKBclmimKKsYx1m-JU6NYD4wGLY73m7Wg"></div><div class="flex-1 min-w-0"><h4 class="text-xs font-bold truncate" style="color: #3E2A1E;">العادات الذرية</h4><p class="text-[11px] mt-0.5 truncate" style="color: #4F5D2F;">جيمس كلير</p></div><button aria-label="إضافة" class="w-12 h-12 rounded-full flex items-center justify-center transition-colors" style="color: #4F5D2F;"><span class="material-symbols-outlined text-[20px]">bookmark_add</span></button></div><div class="flex items-center gap-3.5 p-3 rounded-2xl bg-white border shadow-xs transition-colors" style="border-color: #CDAA85;"><div class="w-6 text-center font-bold text-lg" style="color: #4F5D2F;">٣</div><div class="w-12 h-16 rounded-2xl overflow-hidden shrink-0 shadow-xs bg-stone-100"><img class="w-full h-full object-cover" data-alt="Artistic cover of an Arabic philosophy volume" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbJfr1oplXFVBOszNqUj5B_A-atENtfZEZoztTVrDLJHZeyIE3A1axi73X55yJQL3saOF8NHU5bpYXCBj6Y_JaCY4hPDktD0MKyTdki5voPsUPWuHyPx7wH1iZnlWkjPo3nTZPb2ZOpbJDBoIOxd562ht2mcRUFbjPTHCObNh0wMQZtQaMWKlEQ9JnvsnTRJpBqlzUYgTBjHKaMBiu5Jqd11b89KqFsWgHYZ99Rm9maViImDcrdEoX7g"></div><div class="flex-1 min-w-0"><h4 class="text-xs font-bold truncate" style="color: #3E2A1E;">مقدمة ابن خلدون</h4><p class="text-[11px] mt-0.5 truncate" style="color: #4F5D2F;">عبد الرحمن بن خلدون</p></div><button aria-label="إضافة" class="w-12 h-12 rounded-full flex items-center justify-center transition-colors" style="color: #4F5D2F;"><span class="material-symbols-outlined text-[20px]">bookmark_add</span></button></div></div></section>
+<!-- Shared Component: BottomNavBar (Fixed bottom shell navigation) -->
+<div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto z-30 bg-surface shadow-[0_-2px_10px_rgba(0,0,0,0.04)]"><div class="flex gap-2 border-t px-4 pb-3 pt-2" style="background-color: rgb(251, 246, 238); border-color: rgb(205, 170, 133);"><a class="just flex flex-1 flex-col items-center justify-end gap-1 h-12" href="#" style="color: #4F5D2F;"><div class="flex h-7 items-center justify-center"><span class="material-symbols-outlined text-[24px]">home</span></div><p class="text-xs font-medium leading-normal tracking-[0.015em]">الرئيسية</p></a><a class="just flex flex-1 flex-col items-center justify-end gap-1 h-12 font-bold" href="#" style="color: #6B4630;"><div class="flex h-7 items-center justify-center"><span class="material-symbols-outlined text-[24px] fill" style="font-variation-settings: 'FILL' 1;">local_library</span></div><p class="text-xs leading-normal tracking-[0.015em]">المكتبة</p></a><a class="just flex flex-1 flex-col items-center justify-end gap-1 h-12" href="#" style="color: #4F5D2F;"><div class="flex h-7 items-center justify-center"><span class="material-symbols-outlined text-[24px]">folder_copy</span></div><p class="text-xs font-medium leading-normal tracking-[0.015em]">المجموعات</p></a><a class="just flex flex-1 flex-col items-center justify-end gap-1 h-12" href="#" style="color: #4F5D2F;"><div class="flex h-7 items-center justify-center"><span class="material-symbols-outlined text-[24px]">emoji_events</span></div><p class="text-xs font-medium leading-normal tracking-[0.015em]">إنجازاتي</p></a></div></div>
+</main>
+<script>
+    // Micro-interactions for chip selection
+    document.querySelectorAll('section button').forEach(button => {
+      button.addEventListener('click', function() {
+        if (this.closest('.no-scrollbar')) {
+          const parent = this.closest('.no-scrollbar');
+          parent.querySelectorAll('button').forEach(btn => {
+            btn.className = "flex items-center h-9 px-4 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-xs font-medium shrink-0 active:scale-95 transition-colors";
+            const check = btn.querySelector('.material-symbols-outlined');
+            if (check) check.remove();
+          });
+          this.className = "flex items-center gap-1.5 h-9 px-4 rounded-full bg-primary-container text-on-primary text-xs font-semibold shrink-0 shadow-xs active:scale-95 transition-transform";
+          const icon = document.createElement('span');
+          icon.className = "material-symbols-outlined text-[18px]";
+          icon.textContent = "check";
+          this.prepend(icon);
+        }
+      });
+    });
+  </script>
+
+
+</body></html>
