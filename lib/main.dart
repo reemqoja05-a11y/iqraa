@@ -3,6 +3,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'controllers/app_controller.dart';
+import 'core/config/supabase_config.dart';
+import 'core/di/injection.dart';
 import 'routes/app_routes.dart';
 import 'theme/app_theme.dart';
 
@@ -10,18 +12,18 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Supabase.initialize(
-    url: 'https://anoctvalnezzejwariov.supabase.co',
-    publishableKey: 'sb_publishable_UZPmx362NWO8HNH9Sk39-g_ab8Mx7_E',
+    url: SupabaseConfig.url,
+    publishableKey: SupabaseConfig.publishableKey,
   );
+  await initDependencies();
 
   runApp(const IqraApp());
 }
 
 /// Iqra — reading habit application.
 ///
-/// Native Flutter conversion of the Google Stitch HTML designs.
-/// MVC structure: models → views → controllers → data, with shared widgets
-/// and theme under lib/views/widgets and lib/theme.
+/// UI screens live in lib/views. Business logic is being migrated feature by
+/// feature to lib/features/<name>/{data,domain,presentation} using BLoC.
 class IqraApp extends StatelessWidget {
   const IqraApp({super.key});
 
